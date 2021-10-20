@@ -4,9 +4,11 @@ using UnityEngine;
 
 public abstract class Prenda
 {
-    public abstract int Stock { set; get; }
-    public abstract float Price { set; get; }
-    public abstract Quality ClotheQuality { set; get; }
+    protected int stock;
+    protected float price;
+    protected Quality clotheQuality;
+
+    
 
     public abstract float Calcular(int quantity);
 

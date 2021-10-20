@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Pantalon : Prenda
 {
-    public override int Stock { set; get; }
-    public override float Price { set; get; }
-    public override Quality ClotheQuality { set; get; }
+    public float Price { get => price; set => price = value; }
+    public Quality ClotheQuality { get => clotheQuality; set => clotheQuality = value; }
+    public int Stock { get => stock; set => stock = value; }
 
     public Pant PantType { set; get; }
 

@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Camisa : Prenda
 {
-    public override int Stock { set; get; }
-    public override float Price { set; get; }
-    public override Quality ClotheQuality { set; get; }
+    
     public Sleev TshirtSleeve { private set; get; }
     public Neck TshirtNeck { private set; get; }
+    public float Price { get => price; set => price = value; }
+    public Quality ClotheQuality { get => clotheQuality; set => clotheQuality = value; }
+    public int Stock { get => stock; set => stock = value; }
 
     public Camisa(int stock, Quality quality, Sleev sleev, Neck neck)
     {
