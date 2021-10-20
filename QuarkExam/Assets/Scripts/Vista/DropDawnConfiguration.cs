@@ -106,7 +106,7 @@ public class DropDawnConfiguration : MonoBehaviour
             }
             if (val == 2)
             {
-                valQuality = Quality.STANDARD;
+                valQuality = Quality.PREMIUM;
             }
             Next();
         }
